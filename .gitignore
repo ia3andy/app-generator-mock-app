@@ -9,6 +9,7 @@ src/**/*.css
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.idea/
 
 # dependencies
 /node_modules

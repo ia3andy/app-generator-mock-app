@@ -15,7 +15,7 @@ import {
 } from 'patternfly-react';
 import pfLogo from 'patternfly/dist/img/logo-alt.svg';
 import pfBrand from 'patternfly/dist/img/brand-alt.svg';
-import { routes } from './routes';
+import { routes } from './Routes';
 import './App.css';
 
 class App extends React.Component {
