@@ -13,6 +13,8 @@ import {
   Icon,
   MenuItem
 } from 'patternfly-react';
+import pfLogo from 'patternfly/dist/img/logo-alt.svg';
+import pfBrand from 'patternfly/dist/img/brand-alt.svg';
 import { routes } from './Routes';
 import './App.css';
 
@@ -101,7 +103,7 @@ class App extends React.Component {
       <React.Fragment>
         <VerticalNav persistentSecondary={false}>
           <VerticalNavMasthead>
-            <VerticalNavBrand title="App Generator Mock" />
+            <VerticalNavBrand titleImg={pfBrand} iconImg={pfLogo} />
             <VerticalNavIconBar>
               <Dropdown componentClass={dropdownComponentClass} id="help">
                 <Dropdown.Toggle
@@ -119,7 +121,7 @@ class App extends React.Component {
               <Dropdown componentClass={dropdownComponentClass} id="user">
                 <Dropdown.Toggle className="nav-item-iconic" bsStyle="link">
                   <Icon type="pf" name="user" />{' '}
-                  <span className="dropdown-title">John Doe</span>
+                  <span className="dropdown-title">Brian Johnson</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <MenuItem eventKey="1">Preferences</MenuItem>
