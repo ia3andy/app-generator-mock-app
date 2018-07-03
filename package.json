@@ -19,7 +19,16 @@
     "table-resolver": "^3.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-links": "^3.4.8",
+    "@storybook/addons": "^3.4.8",
+    "@storybook/react": "^3.4.8",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-runtime": "^6.26.0",
     "cross-var": "^1.1.0",
     "eslint": "^4.19.1",
     "eslint-plugin-patternfly-react": "^0.1.1",
@@ -51,7 +60,9 @@
     "prettier": "prettier --write --single-quote --trailing-comma=none \"src/**/*.js\"",
     "analyze": "source-map-explorer build/static/js/main.*",
     "lint": "yarn lint:js",
-    "lint:js": "eslint --max-warnings 0 src"
+    "lint:js": "eslint --max-warnings 0 src",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "development": [
