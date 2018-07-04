@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "enzyme-adapter-react-16": "^1.1.1",
     "lodash.orderby": "^4.6.0",
     "numeral": "^2.0.6",
     "patternfly-react": "^2.10.1",
@@ -31,6 +32,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "cross-var": "^1.1.0",
+    "enzyme": "^3.3.0",
     "eslint": "^4.19.1",
     "eslint-plugin-patternfly-react": "^0.1.1",
     "ncp": "^2.0.0",
