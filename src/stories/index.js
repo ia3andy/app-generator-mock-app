@@ -17,6 +17,7 @@ storiesOf('Chat-Bot', module).add('Hello you', () => {
     <ChatBot
       headerTitle="Cloud App Creator"
       ref={node => (chat = node)}
+      width="500px"
       steps={[
         {
           id: '1',

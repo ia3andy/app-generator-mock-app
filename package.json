@@ -25,6 +25,7 @@
     "@storybook/addon-links": "^3.4.8",
     "@storybook/addons": "^3.4.8",
     "@storybook/react": "^3.4.8",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -65,7 +66,8 @@
     "lint": "yarn lint:js",
     "lint:js": "eslint --max-warnings 0 src",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "browserslist": {
     "development": [
