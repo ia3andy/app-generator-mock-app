@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions';
 
 import ChatBot from 'react-simple-chatbot';
 
-storiesOf('Chat-Bot', module).add('Hello you', () => {
+storiesOf('Designs', module).add('Chat-Bot', () => {
   let chat;
   const triggerInput = (inputValue, step) => () => {
     setTimeout(() => chat.setState({ inputValue }), 1000);
@@ -17,7 +17,7 @@ storiesOf('Chat-Bot', module).add('Hello you', () => {
     <ChatBot
       headerTitle="Cloud App Creator"
       ref={node => (chat = node)}
-      width="500px"
+      width="600px"
       steps={[
         {
           id: '1',
