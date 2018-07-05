@@ -191,8 +191,13 @@ storiesOf('Designs', module).add('Chat-Bot', () => {
             "Good. We're going to set up a configuration called a ConfigMap which will store your login credentials for the database; these values will be secrets shared by both the runtime and the database so the two may communicate. Provide your desired username/password?",
           trigger: triggerInput(
             'xxxxx/yyyyy',
-            'add-database-service-setup-schema'
+            'user-dd-database-service-setup-creds'
           )
+        },
+        {
+          id: 'user-dd-database-service-setup-creds',
+          user: true,
+          trigger: 'add-database-service-setup-schema'
         },
         {
           id: 'add-database-service-setup-schema',
